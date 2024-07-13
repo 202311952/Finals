@@ -54,6 +54,9 @@
 .nav-link:hover, .nav-link.active:hover {
     color: #000000;
 }
+.nav-link.active{
+    font-weight: bold;
+}
 @media (min-width: 991px) {
     .nav-link::before {
         content: "";
@@ -65,7 +68,7 @@
         height: 2px;
         background-color: #272727;
         visibility: hidden;
-        transition: 0.1s ease-in-out;
+        transition: 0.3s ease-in-out;
     }
 }
     .nav-link:hover::before, .nav-link.active:hover::before {
@@ -99,6 +102,10 @@
     z-index: 1;
 }
 
+.hero-section.bg-grey, .about-content.bg-grey {
+    background-color: #f0f0f0; 
+}
+
 .logo-landing {
     background-size: cover;
     margin-top: 100px;
@@ -111,6 +118,11 @@
     color: white;
     text-align: center;
 }
+
+.bg-grey {
+    background-color: #f0f0f0 !important; 
+}
+
 .logo-landing h1 {
     font-size: 3rem;
     margin-bottom: 20px;
@@ -129,6 +141,7 @@
     font-size: 1rem;
 }
 
+
 .separator {
     background-color: #373737; 
     height: 20px; 
@@ -140,7 +153,7 @@
 
 .fixed-size-image {
     width: 400px;
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     border-radius: 8px;
     display: block;
@@ -169,4 +182,45 @@
         width: 100%;
         height: auto;
     }
+}
+
+
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.image-item {
+    text-align: center;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.image-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.rental-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.rental-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000; 
+}
+
+.rental-description {
+    font-size: 1rem;
+    color: #666; 
+    margin-bottom: 10px;
 }
