@@ -65,7 +65,7 @@
         height: 2px;
         background-color: #272727;
         visibility: hidden;
-        transition: 0.12s ease-in-out;
+        transition: 0.1s ease-in-out;
     }
 }
     .nav-link:hover::before, .nav-link.active:hover::before {
